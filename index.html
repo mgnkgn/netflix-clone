@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix</title>
-  </head>
-  <body>
-    <header>
-      <h1>NETFLIX</h1>
-      <nav>
-        <ul>
-          <li>
-            <select name="lang" id="lang">
-              <option value="English">English</option>
-              <option value="Italian">Italian</option>
-            </select>
-          </li>
-          <li><button>Sign In</button></li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+    <head> 
+        <style>
+            .container .head{
+                position:absolute;
+                top:0;
+                left:0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 95%;
+            }
+            .container .head img{
+                width: 15%;
+            }
+            .container .head a{
+                color:#fff;
+                text-decoration: none;
+                background-color: red;
+                padding: 8px 18px;
+                border-radius: 5px;
+            }
+        </style>
+        <title> Netflix</title>
+        <link rel="stylesheet" type-="text/css" href="style.css"    >   
+     </head>
+     <body>
+        <section class="container">
+            <div class="head">
+                <img src="netflix-logo.png">
+                <a href="#">Sign up</a>
+            </div>
+        </section>
+        <section class="banner">
+            <img src="netflix-image.jpg" class="fit">    
+        </section>
+     </body>
 </html>
+
+    
