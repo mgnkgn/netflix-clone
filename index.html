@@ -8,29 +8,37 @@
     <title>Netflix</title>
   </head>
   <body>
-    =======
-    <header>
-      <h1>NETFLIX</h1>
-      <nav>
-        <ul>
-          <li>
-            <select name="lang" id="lang">
-              <option value="English">English</option>
-              <option value="Italian">Italian</option>
-            </select>
-          </li>
-          <li><button>Sign In</button></li>
-        </ul>
-      </nav>
-      <h2>Unlimited movies, TV shows, and more.</h2>
-      <h3>Watch anywhere. Cancel anytime.</h3>
-      <h5>
-        Ready to watch? Enter your email to create or restart your membership.
-      </h5>
-      <form action="#">
-        <input type="email" placeholder="Email address" />
-        <button type="submit">Get Started ></button>
-      </form>
+    <header class="header">
+      <section class="header_first_row">
+        <img src="assets/logo.png" alt="netflix logo" class="logo_img" />
+        <nav>
+          <ul class="header_ul">
+            <li>
+              <label for="lang" id="lang">
+                <select name="lang" id="lang" class="header_lang">
+                  <option value="&#10057; English" selected disabled hidden>
+                    &#10057; English
+                  </option>
+                  <option value="English">English</option>
+                  <option value="Italian">Italian</option>
+                </select>
+              </label>
+            </li>
+            <li><button class="header_sign">Sign In</button></li>
+          </ul>
+        </nav>
+      </section>
+      <section class="header_second_row">
+        <h2>Unlimited movies, TV shows, and more.</h2>
+        <h3>Watch anywhere. Cancel anytime.</h3>
+        <p>
+          Ready to watch? Enter your email to create or restart your membership.
+        </p>
+        <form action="#" class="header_form">
+          <input type="email" placeholder="Email address" />
+          <button type="submit">Get Started ></button>
+        </form>
+      </section>
     </header>
     <!-- section1 by Güneş -->
     <section class="s1">
@@ -103,6 +111,9 @@
       </section>
       <section class="footer_third_row">
         <select name="lang" id="lang" class="footer_lang">
+          <option value="&#10057; English" selected disabled hidden>
+            &#10057; English
+          </option>
           <option value="English">English</option>
           <option value="Italian">Italian</option>
         </select>

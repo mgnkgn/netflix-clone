@@ -5,6 +5,130 @@
 body {
   margin: 0;
 }
+/* Header */
+.header {
+  display: grid;
+  grid-template-rows: 8rem 1fr;
+  background-image: url("../assets/Header_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  box-shadow: -1px 395px 500px -200px rgba(0, 0, 0, 0.8) inset,
+    -1px -450px 500px -200px rgba(0, 0, 0, 0.8) inset;
+  height: 42.5rem;
+}
+.header_first_row {
+  grid-row: 1 / span 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_ul {
+  list-style: none;
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+}
+.header_lang,
+.header_sign {
+  padding: 0.5rem 0.75rem;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 2px;
+}
+.header_lang:hover,
+.header_sign:hover {
+  cursor: pointer;
+}
+.header_lang {
+  background: none;
+  border: 0.1px solid white;
+  outline: none;
+  appearance: none;
+  padding-right: 1.5rem;
+  position: relative;
+  z-index: 0;
+}
+#lang::after {
+  content: "";
+  border: 5px solid;
+  border-color: transparent;
+  border-top-color: white;
+  display: inline-block;
+  z-index: 2;
+  transform: translateX(-22px) translateY(2px);
+}
+.header_lang option {
+  background: grey;
+  color: white;
+  margin: 1rem 0rem;
+}
+.header_lang option:hover {
+  background: white;
+  color: grey;
+}
+.header_sign {
+  background: red;
+  padding: 0.5rem 1.25rem;
+}
+.logo_img {
+  width: 12rem;
+  mix-blend-mode: screen;
+}
+.header_second_row {
+  grid-row: 2 / span 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header_second_row h2 {
+  font-weight: 600;
+  width: 20ch;
+  text-align: center;
+  font-size: 4rem;
+  margin: 0;
+}
+.header_second_row h3 {
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+}
+.header_second_row p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0 1rem 1rem 1rem;
+}
+.header_form {
+  display: flex;
+}
+.header_form input {
+  padding: 1rem;
+  padding-right: 22rem;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+}
+.header_form input::placeholder {
+  font-size: 1.15rem;
+  font-weight: lighter;
+  color: rgba(170, 170, 170, 0.75);
+}
+.header_form button {
+  background: RGB(245, 0, 0);
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 2px;
+}
+.header_form button:hover {
+  cursor: pointer;
+  background: RGB(255, 51, 51);
+}
 /* Section 1 */
 .s1 {
   display: flex;
@@ -20,8 +144,8 @@ body {
   margin-left: 2rem;
 }
 .s1_img {
-  width: 500px;
-  height: 350px;
+  width: 30%;
+  /* height: 350px; */
   margin-right: 1rem;
 }
 .s1 h3 {
@@ -61,6 +185,9 @@ body {
 .s4 p {
   width: 40ch;
   font-size: 1.5rem;
+}
+.s4_img {
+  width: 40%;
 }
 
 /* Footer */
