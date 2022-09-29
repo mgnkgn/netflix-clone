@@ -1,3 +1,7 @@
+:root {
+  --border-seperator: 8px solid grey;
+}
+
 body {
   margin: 0;
 }
@@ -13,9 +17,28 @@ body {
   color: white;
 }
 
+/* Section 4 */
+.s4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: black;
+  color: #f1f1f1;
+  font-weight: 600;
+  border-top: var(--border-seperator);
+}
+.s4 h3 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.s4 p {
+  width: 40ch;
+  font-size: 1.5rem;
+}
+
 /* Footer */
 .footer {
-  border-top: 8px solid grey;
+  border-top: var(--border-seperator);
   display: grid;
   grid-template-rows: 5rem 10rem 8rem;
   grid-template-columns: 1fr;
