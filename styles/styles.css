@@ -242,7 +242,61 @@ body {
   margin-top: 0;
   color: blue;
 }
+/* Section 3 */
+.s3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: black;
+  color: white;
+  border-top: var(--border-seperator);
+  height: 25rem;
+}
+.s3_side {
+  margin-left: 2rem;
+}
+.s3_img_container {
+  position: relative;
+  background: transparent;
+}
+.s3_img {
+  width: 100%;
+  height: 20rem;
+  margin-right: 1rem;
+}
+.s3_video {
+  width: 100%;
+  height: 10rem;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 2rem;
+  right: 0.1rem;
+  clip-path: polygon(
+    0% 0%,
+    0 85%,
+    22% 85%,
+    22% 100%,
+    68% 100%,
+    68% 53%,
+    100% 53%,
+    100% 0%
+  );
+}
+.s3_video_container {
+  height: 20rem;
+  width: 100%;
+  position: absolute;
+}
 
+.s3 h3 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.s3 p {
+  width: 40ch;
+  font-size: 1.5rem;
+}
 /* Section 4 */
 .s4 {
   display: flex;
