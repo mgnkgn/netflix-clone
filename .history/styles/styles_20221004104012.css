@@ -221,7 +221,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 20%;
+  height: 15%;
   width: 50%;
   background: #000;
   border: 2px solid hsla(0, 0%, 100%, 0.25);

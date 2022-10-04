@@ -197,8 +197,9 @@ body {
   font-weight: 600;
 }
 .s2_animation {
-  padding-bottom: 70px;
-  position: relative;
+  display: flex;
+  align-items: left;
+  justify-content: space-evenly;
 }
 .s2 h3 {
   font-weight: bold;
@@ -208,40 +209,9 @@ body {
   width: 40ch;
   font-size: 1.5rem;
 }
-.s2_img {
-  border: 0;
-  height: auto;
-  height: auto;
-  width: 80%;
-}
-.show_img {
-  height: 90%;
-}
-.s2_animated_rectangle {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  height: 20%;
+/* .s2_img {
   width: 50%;
-  background: #000;
-  border: 2px solid hsla(0, 0%, 100%, 0.25);
-  border-radius: 0.75em;
-  bottom: 8%;
-  box-shadow: 0 0 2em 0 #000;
-  display: flex;
-  left: 15%;
-  bottom: 20%;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-}
-.show_name {
-  margin-bottom: 0;
-}
-.downloading {
-  margin-top: 0;
-  color: blue;
-}
+} */
 
 /* Section 4 */
 .s4 {
